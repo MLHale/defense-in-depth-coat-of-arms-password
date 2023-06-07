@@ -1,6 +1,10 @@
 radio.onReceivedNumber(function (receivedNumber) {
     console.log("received: " + ("" + ("" + ("" + ("" + ("" + ("" + receivedNumber)))))))
-coatOfArms = paddBinary(integerToBinary(receivedNumber))
+console.log('reset function variables')
+result = ""
+    result2 = ""
+    result3 = ""
+    coatOfArms = paddBinary(integerToBinary(receivedNumber))
     console.log("converting back to binary...")
 console.log(coatOfArms)
 console.log("checking against stored password: " + checkpassword)
@@ -104,6 +108,7 @@ function integerToBinary (num: number): any {
     return "" + result2 + ("" + num % 2)
 }
 input.onButtonPressed(Button.A, function () {
+    coatOfArms = "" + row1 + row2 + row3 + row4 + row5
     let bitstringAsInt = parseInt(coatOfArms, 2)
 console.log("converting: " + coatOfArms + " to integer.")
 console.log("sending: " + ("" + ("" + ("" + ("" + ("" + ("" + bitstringAsInt)))))))
@@ -196,33 +201,38 @@ input.onButtonPressed(Button.B, function () {
 })
 function paddBinary (binarynumber: string) {
     let index: number;
-console.log("length:" + ("" + ("" + ("" + ("" + ("" + result.length))))))
+console.log("length:" + ("" + ("" + ("" + ("" + ("" + result3.length))))))
 if (binarynumber.length < 25) {
         index = 0
         while (index <= 25 - binarynumber.length - 1) {
             console.log("index: " + ("" + ("" + ("" + ("" + ("" + index))))))
-result = "" + result + "0"
-            console.log(result)
+result3 = "" + result3 + "0"
+            console.log(result3)
 index += 1
         }
     }
-    return "" + result + binarynumber
+    return "" + result3 + binarynumber
 }
 let result2 = ""
-let checkpassword = ""
-let coatOfArms = ""
 let result = ""
+let row5 = ""
+let row4 = ""
+let row3 = ""
+let row2 = ""
+let row1 = ""
+let result3 = ""
+let coatOfArms = ""
+let checkpassword = ""
 coatOfArms = ""
 // Set your accepted coat of arms password here
 checkpassword = "0000100001000010000100001"
 // This is the first row of the coat of arms password you want to test against the accepted one
-let row1 = "00001"
+row1 = "00001"
 // This is the second row of the test password
-let row2 = "00001"
+row2 = "00001"
 // This is the third row of the test password
-let row3 = "00001"
+row3 = "00001"
 // This is the fourth row of the test password
-let row4 = "00001"
+row4 = "00001"
 // This is the fifth row of the test password
-let row5 = "00001"
-coatOfArms = "" + row1 + row2 + row3 + row4 + row5
+row5 = "00001"
