@@ -220,6 +220,10 @@ let row4 = ""
 let row3 = ""
 let row2 = ""
 let row1 = ""
+// Set this to your group number
+radio.setGroup(1)
+// Set this to your group number
+radio.setFrequencyBand(1)
 let result3 = ""
 let coatOfArms = ""
 let checkpassword = ""
