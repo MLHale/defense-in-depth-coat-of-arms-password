@@ -220,23 +220,15 @@ let row4 = ""
 let row3 = ""
 let row2 = ""
 let row1 = ""
-// Set this to your group number
 radio.setGroup(1)
-// Set this to your group number
 radio.setFrequencyBand(1)
 let result3 = ""
 let coatOfArms = ""
 let checkpassword = ""
 coatOfArms = ""
-// Set your accepted coat of arms password here
 checkpassword = "0000100001000010000100001"
-// This is the first row of the coat of arms password
 row1 = "00001"
-// This is the second row of the coat of arms password
 row2 = "00001"
-// This is the third row of the coat of arms password
 row3 = "00001"
-// This is the fourth row of the coat of arms password
 row4 = "00001"
-// This is the fifth row of the coat of arms password
 row5 = "00001"
