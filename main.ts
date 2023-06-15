@@ -112,7 +112,90 @@ input.onButtonPressed(Button.A, function () {
     let bitstringAsInt = parseInt(coatOfArms, 2)
 console.log("converting: " + coatOfArms + " to integer.")
 console.log("sending: " + ("" + ("" + ("" + ("" + ("" + ("" + bitstringAsInt)))))))
-radio.sendNumber(bitstringAsInt)
+if (coatOfArms.charAt(0) == "1") {
+        led.plot(0, 0)
+    }
+    if (coatOfArms.charAt(1) == "1") {
+        led.plot(1, 0)
+    }
+    if (coatOfArms.charAt(2) == "1") {
+        led.plot(2, 0)
+    }
+    if (coatOfArms.charAt(3) == "1") {
+        led.plot(3, 0)
+    }
+    if (coatOfArms.charAt(4) == "1") {
+        led.plot(4, 0)
+    }
+    if (coatOfArms.charAt(5) == "1") {
+        led.plot(0, 1)
+    }
+    if (coatOfArms.charAt(6) == "1") {
+        led.plot(1, 1)
+    }
+    if (coatOfArms.charAt(7) == "1") {
+        led.plot(2, 1)
+    }
+    if (coatOfArms.charAt(8) == "1") {
+        led.plot(3, 1)
+    }
+    if (coatOfArms.charAt(9) == "1") {
+        led.plot(4, 1)
+    }
+    if (coatOfArms.charAt(10) == "1") {
+        led.plot(0, 2)
+    }
+    if (coatOfArms.charAt(11) == "1") {
+        led.plot(1, 2)
+    }
+    if (coatOfArms.charAt(12) == "1") {
+        led.plot(2, 2)
+    }
+    if (coatOfArms.charAt(13) == "1") {
+        led.plot(3, 2)
+    }
+    if (coatOfArms.charAt(14) == "1") {
+        led.plot(4, 2)
+    }
+    if (coatOfArms.charAt(15) == "1") {
+        led.plot(0, 3)
+    }
+    if (coatOfArms.charAt(16) == "1") {
+        led.plot(1, 3)
+    }
+    if (coatOfArms.charAt(17) == "1") {
+        led.plot(2, 3)
+    }
+    if (coatOfArms.charAt(18) == "1") {
+        led.plot(3, 3)
+    }
+    if (coatOfArms.charAt(19) == "1") {
+        led.plot(4, 3)
+    }
+    if (coatOfArms.charAt(20) == "1") {
+        led.plot(0, 4)
+    }
+    if (coatOfArms.charAt(21) == "1") {
+        led.plot(1, 4)
+    }
+    if (coatOfArms.charAt(22) == "1") {
+        led.plot(2, 4)
+    }
+    if (coatOfArms.charAt(23) == "1") {
+        led.plot(3, 4)
+    }
+    if (coatOfArms.charAt(24) == "1") {
+        led.plot(4, 4)
+    }
+    control.waitMicros(2000000)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
+    radio.sendNumber(bitstringAsInt)
 })
 input.onButtonPressed(Button.B, function () {
     if (coatOfArms.charAt(0) == "1") {
